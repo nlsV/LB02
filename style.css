@@ -35,6 +35,9 @@ body {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  filter: blur(12px);
+  -webkit-filter: blur(12px);
+  
 }
 
 /* Infotext zu Alkohol am unteren Seitenende */
