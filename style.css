@@ -22,12 +22,66 @@ h3 {
   font-weight: 200;
 }
 
+h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 200;
+}
+
+h5 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000;
+  margin: 0px;
+}
+
+p {
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+}
+
+th {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 200;
+}
+
 body {
   padding: 0;
   margin: 0;
 }
 
-/* Style the video: 100% width and height to cover the entire window */
+header {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  overflow: hidden;
+}
+
+form {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 40px 0 40px 35vw;
+}
+
+.geschlecht {
+  margin-left: -45vw;
+}
+
+.geschlecht input {
+  width: 100px;
+}
+
+input {
+  border-radius: 6px;
+  margin: 10px 15px 10px 15px;
+  text-align: center;
+  border: #fff;
+  height: 25px;
+  width: 150px;
+}
 
 #Video {
   position: fixed;
@@ -35,9 +89,7 @@ body {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  filter: blur(12px);
-  -webkit-filter: blur(12px);
-  
+  opacity: 0.5; 
 }
 
 /* Infotext zu Alkohol am unteren Seitenende */
@@ -69,4 +121,58 @@ header .logo {
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
+}
+
+/* The Modal (background) */
+.popup {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 15%;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.popup-inhalt {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 2%;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+.popup-inhalt p {
+  margin-right: 10%;
+  line-height: 120%;
+  font-size: 12px;
+  margin-bottom: 10%;
+}
+
+/* The Close Button */
+.schliessen {
+  color: #aaa;
+  float: right;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.schliessen:hover,
+.schliessen:focus {
+  color: black;
+  cursor: pointer;
 }

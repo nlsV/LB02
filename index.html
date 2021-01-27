@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700;800&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"> </script>
 </head>
 
 <body>
@@ -25,28 +25,87 @@
         </div>
     </header>
     <main>
+        <h1>Promillerechner</h1>
+        <form name="eingabe">
+            <table>
+                <tr>
+                    <th>Körpergewicht:</th>
+                    <td><input type="text" name="igewicht" value=""
+                            onclick="document.eingabe.igewicht.value =löschen">kg
+                    </td>
+                </tr>
+                <tr>
+                    <th>Prozent:</th>
+                    <td><input type="text" name="iprozent" value=""
+                            onclick="document.eingabe.iprozent.value =löschen">%
+                    </td>
+                </tr>
+                <tr>
+                    <th>Trinkmenge:</th>
+                    <td><input type="text" name="imenge" value=""
+                            onclick="document.eingabe.imenge.value =löschen">ml
+                    </td>
+                </tr>
+                <tr>
+                    <th>Zeitspanne</th>
+                    <td><input type="text" name="izeit" value="" onclick="document.eingabe.izeit.value =löschen">h
+                    </td>
+                </tr>
+            </table>
+            <div class="geschlecht"><input type="radio" name="radio1" value="w" onclick="i = 2">weiblich
+            <input type="radio" name="radio1" value="m" onclick="i = 1">männlich
+            <p> <input type="button" value="Berechnen" onclick="rechnen()"></div>   
+                <p>
+                    <!-- PopUp Fenster -->
+                    <div id="PopUp" class="popup">
+                        <div class="popup-inhalt">
+                            <span class="schliessen">&times;</span>
+                            <h5>Dein Resultat</h5>
+                            <p>
+                                Die Berechnung der BAK erfolgt ohne Gewähr und dient nicht zur Entscheidung, ob Sie
+                                noch ein Fahrzeug
+                                führen dürfen. Die BAK ist abhängig von der individuellen körperlichen Verfassung,
+                                medikamentöser
+                                Behandlung etc. und kann daher im Einzelfall stark von den hier dargestellten Ergebnissen abweichen.
+                            </p>
+                            <table>
+                                <tr>
+                                    <td><p>Deine Blutalkoholkonzentration (BAK) in Promille beträgt etwa:</p></td>
+                                    <td><input type="text" name="ipromille" value=""></td>
+                                </tr>
+                            </table>
 
-        <a class="trigger_popup_fricc">Click here to show the popup</a>
+                        </div>
+                    </div>
 
-        <div class="hover_bkgr_fricc">
-            <span class="helper"></span>
-            <div>
-                <div class="popupCloseButton">&times;</div>
-                <p>Add any HTML content<br />inside the popup box!</p>
-            </div>
-        </div>
+                    <script>
+                        // Get the modal
+                        var popup = document.getElementById("PopUp");
 
-        <h1>Promillerechner!</h1>
-        <p>Hier kommt der Rechner rein, gell</p>
+                        // Get the <span> element that schliessens the modal
+                        var span = document.getElementsByClassName("schliessen")[0];
+
+
+                        // When the user clicks on <span> (x), schliessen the modal
+                        span.onclick = function () {
+                            popup.style.display = "none";
+                        }
+
+                        // When the user clicks anywhere outside of the modal, schliessen it
+                        window.onclick = function (event) {
+                            if (event.target == popup) {
+                                popup.style.display = "none";
+                            }
+                        }
+                    </script>
+        </form>
     </main>
     <footer>
         <div>
         <h1>ACHTUNG!</h1>
-        <p>Alkohol kann bereits in kleinen Mengen eine Vielzahl von Krankheiten verursachen
-            <br>
-            oder begünstigen. Wer zu viel und zu häufig trinkt, läuft Gefahr, abhängig zu werden
-            <br>
-            oder eine Vergiftung zu erleiden. Auch das Unfallrisiko steigt...</p>
+        <h4>Alkohol kann bereits in kleinen Mengen eine Vielzahl von Krankheiten verursachen
+            oder begünstigen. Wer zu viel und zu häufig trinkt, läuft Gefahr, <br> abhängig zu werden
+            oder eine Vergiftung zu erleiden. Auch das Unfallrisiko steigt...</h4>
         </div>
     </footer>
 </body>
