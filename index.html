@@ -78,19 +78,14 @@
                     </div>
 
                     <script>
-                        // Get the modal
                         var popup = document.getElementById("PopUp");
 
-                        // Get the <span> element that schliessens the modal
                         var span = document.getElementsByClassName("schliessen")[0];
 
-
-                        // When the user clicks on <span> (x), schliessen the modal
                         span.onclick = function () {
                             popup.style.display = "none";
                         }
 
-                        // When the user clicks anywhere outside of the modal, schliessen it
                         window.onclick = function (event) {
                             if (event.target == popup) {
                                 popup.style.display = "none";
