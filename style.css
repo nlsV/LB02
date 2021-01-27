@@ -2,6 +2,11 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 h1 {
   font-size: 60px;
   color: #fff;
@@ -10,21 +15,15 @@ h1 {
 }
 
 h2 {
-font-weight: 500;
-color: #fff;
-margin: 0px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0px;
 }
 
 h3 {
   font-size: 20px;
   color: #fff;
   margin: -20px 0px 0px 0px;
-  font-weight: 200;
-}
-
-h4 {
-  font-size: 20px;
-  color: #fff;
   font-weight: 200;
 }
 
@@ -45,11 +44,7 @@ th {
   font-size: 20px;
   color: #fff;
   font-weight: 200;
-}
-
-body {
-  padding: 0;
-  margin: 0;
+  text-align: left;
 }
 
 header {
@@ -57,21 +52,6 @@ header {
   width: 100vw;
   background: black;
   overflow: hidden;
-}
-
-form {
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  margin: 40px 0 40px 35vw;
-}
-
-.geschlecht {
-  margin-left: -45vw;
-}
-
-.geschlecht input {
-  width: 100px;
 }
 
 input {
@@ -89,7 +69,24 @@ input {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  opacity: 0.5; 
+  opacity: 0.5;
+}
+
+.geschlecht {
+  margin-left: 7.5%;
+}
+
+.geschlecht input {
+  margin: 0;
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 2%;
+  height: 15px;
+}
+
+#berechnen {
+  width: 10%;
+  height: 25px;
 }
 
 /* Infotext zu Alkohol am unteren Seitenende */
@@ -102,17 +99,19 @@ footer {
   padding: 20px;
 }
 
-footer div {
-  text-align: center;
+h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 200;
+  margin-top: 0;
 }
 
 main {
   position: fixed;
-  bottom: 30%;
+  bottom: 35%;
   color: #f1f1f1;
   width: 100%;
-  padding: 20px;
-  text-align: center;
+  padding-left: 40%;
 }
 
 header .logo {

@@ -8,7 +8,6 @@
     <title>LB02 - Promillerechner</title>
     <link rel="shortcut icon" href="assets/favicon.png">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700;800&display=swap" rel="stylesheet">
     <script type="text/javascript" src="script.js"> </script>
@@ -54,7 +53,7 @@
             </table>
             <div class="geschlecht"><input type="radio" name="radio1" value="w" onclick="i = 2">weiblich
             <input type="radio" name="radio1" value="m" onclick="i = 1">männlich
-            <p> <input type="button" value="Berechnen" onclick="rechnen()"></div>   
+            <p> <input type="button" value="Berechnen" onclick="rechnen()" id="berechnen"></div>   
                 <p>
                     <!-- PopUp Fenster -->
                     <div id="PopUp" class="popup">
@@ -103,7 +102,7 @@
     <footer>
         <div>
         <h1>ACHTUNG!</h1>
-        <h4>Alkohol kann bereits in kleinen Mengen eine Vielzahl von Krankheiten verursachen
+        <h4>Alkohol kann bereits in kleinen Mengen eine Vielzahl von Krankheiten verursachen<br>
             oder begünstigen. Wer zu viel und zu häufig trinkt, läuft Gefahr, <br> abhängig zu werden
             oder eine Vergiftung zu erleiden. Auch das Unfallrisiko steigt...</h4>
         </div>
